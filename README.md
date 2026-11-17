@@ -2,6 +2,8 @@
 
 A macOS app and command-line tool that generates app icon artwork with image models, lets you refine it, and exports it in the formats Xcode and macOS expect.
 
+![The app comparing four models on the same prompt, with the favourite candidate selected](docs/screenshot.png)
+
 - **Generate** from a short subject description and a style preset.
 - **Compare** the same prompt across several models at once.
 - **Refine** a candidate with an image-editing model ("make the sky orange").
@@ -86,3 +88,7 @@ The tests use stand-ins for the network and for Codex, so they need no keys and 
 - The app is not sandboxed and is signed to run locally only.
 - Model lists, public scores and release dates are fixed in the code and will age.
 - The OpenAI API provider is covered by tests but has not been run against the live API.
+
+## Licence
+
+The code is released under the [MIT License](LICENSE). That covers this software only; the image models have their own licences, described above.
