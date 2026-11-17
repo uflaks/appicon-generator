@@ -2,7 +2,7 @@
 
 A macOS app and command-line tool that generates app icon artwork with image models, lets you refine it, and exports it in the formats Xcode and macOS expect.
 
-![The app comparing four models on the same prompt, with the favourite candidate selected](docs/screenshot.png)
+![The app after running one prompt, an owl reading a book, on four models at once](docs/screenshot.png)
 
 - **Generate** from a short subject description and a style preset.
 - **Compare** the same prompt across several models at once.
