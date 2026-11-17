@@ -1,0 +1,33 @@
+# Source for AppIconGenerator.xcodeproj. Regenerate with `xcodegen` after changing this file.
+name: AppIconGenerator
+options:
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+packages:
+  AppIconGenerator:
+    path: .
+targets:
+  AppIconGenerator:
+    type: application
+    platform: macOS
+    sources:
+      - App
+    dependencies:
+      - package: AppIconGenerator
+        product: AppIconUI
+    settings:
+      base:
+        PRODUCT_NAME: App Icon Generator
+        PRODUCT_BUNDLE_IDENTIFIER: local.appicon-generator
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        # Signed to run on this Mac only; not sandboxed, so it can read the hf command-line login.
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME: NO
